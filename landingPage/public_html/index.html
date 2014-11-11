@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mullen Code Challenge</title>
+        
+        <link rel="stylesheet" media="(max-width: 1400px)" href="css/style.css"/>
+        <link rel="stylesheet" media="(max-width: 1024px)" href="css/style1024.css"/>
+        <link rel="stylesheet" media="(max-width: 792px)" href="css/style792.css"/>
+        <link rel="stylesheet" media="(max-width: 613px)" href="css/style613.css"/>
+        <link rel="stylesheet" media="(max-width: 532px)" href="css/style532.css"/>
+        <link rel="stylesheet" media="(max-width: 430px)" href="css/style430.css"/>
+        <link rel="stylesheet" media="(max-width: 321px)" href="css/style320.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style type="text/css">
+            @-moz-document url-prefix() {
+            header{
+            background-color: #328fc2;
+            height:49px;
+            width:100%
+            }
+            nav ul li{
+            display:inline;    
+            list-style-type: none;
+            padding: 15px 20px; 
+            }
+          }
+        </style>
+   
+    </head>
+    <body>
+        <header>            
+            <img src="images/Logo.png" alt="Logo"/>            
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">employee</a></li>
+                        <li class="active1"><a href="#">company</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav><!--end nav-->            
+        </header><!--end header-->
+        
+        <section>            
+            <p id="heading">Best Bank Ever!</p>            
+            <br/>            
+            <p id="info">
+                Pallentesque habitant morbi tristique senectus et netus et
+                <a href="#">malesuada</a> fames ac turpis egestas. vastibulum tortor
+                quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                Donec eu libero sit amet quam egestas semper. Aenean ultricies
+                mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est
+                et sapien ullamcorper pharetra.
+            </p>            
+            <br/>            
+            <p id="reasons">Reasons We're Awesome:</p>  
+            
+            <ul id="reasonList">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+            </ul><!--end reason list-->            
+            <br/>
+                
+            <div id="mobileInfo">
+                <img src="images/phone.png" alt="Phone"/>
+                <p id="mobileInfoHead">Amazing Mobile Info</p>
+                <p id="mobileInfoFill">
+                Pallentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. vastibulum tortor
+                quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                </p>                
+            </div><!--end mobileInfo-->    
+            
+            <div id="rates">
+                <p id="ratesHeading">Rates  |  <b>Check them out.</b></p>
+            </div> <!-- end rates-->
+            <br/>           
+            
+            <table id="res" cellspacing="0">               
+                    <tr class="first">
+                        <td></td>
+                        <td style="font-size:10px;text-align:right;">Annual Percentage Yeild</td>
+                        <td style="font-size:10px;text-align:right;">Est. Earnings for 1 Year*</td>
+                    </tr>     
+            </table><!--end table, table contents generated using API-->
+            
+            <span class="toRight">*Based on $50,000 Deposit.</span>
+                <br/><br/>   
+        </section><!--end Section-->
+        
+        <div id="sidebar">
+           <a href="#" onclick='showPopup()'><input type="button" id="login" value="Login"/></a> <!--Login Button-->
+              
+           <div class="tabs">
+                <ul class="tab-links">
+                    <li class="active"><a href="#tab1">News</a></li>
+                    <li><a href="#tab2">Archive</a></li>
+                </ul>
+ 
+                <div class="tab-content">
+                    <div id="tab1" class="tab active">
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="normal">Pellentesque habitant morbi tristique 
+                         senectus et netus et malesuada fames ac turpis
+                        </p>
+                
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="normal">Pellentesque habitant morbi tristique 
+                        senectus et netus et malesuada fames ac turpis
+                        </p>
+                
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="normal">Pellentesque habitant morbi tristique 
+                        senectus et netus et malesuada fames ac turpis
+                        </p>
+                    </div><!--end news tab-->
+ 
+                    <div id="tab2" class="tab">
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                        <p id="blue"><a href="#">Lorem ipsum dolor</a></p>
+                    </div><!end archive tab-->
+ 
+        
+                </div><!--end tab content-->
+            </div><!--end class tabs-->
+
+            
+                
+            <div id="popup">
+                <div>      
+                    <span class="close-btn"><a href="#" onclick="showPopup()"><img src="images/Close.png" alt="close"></a></span>
+
+                    <h2>Sign Into Your Account.</h2>
+                    <br/>
+                    <form action="#" method="post">
+                    <p>Username <input type="text" id="username"/></p>
+                    <p>Password  <input type="password" id="password"/></p>
+                    <input type="button" id="submit" value="Login" onclick="showPopup()"/>
+                    </form>
+                </div>
+            </div><!--end popup-->
+        </div> <!--end sidebar--> 
+       
+        <footer>
+            <div id="copyright">&copy; 2014 URBANK</div>
+                <ul id="footerNav">
+                     <li><a href="#">home</a></li>
+                     <li><a href="#">employee</a></li>
+                     <li class="active1"><a href="#"><b>company</b></a></li>
+                     <li><a href="#">services</a></li>
+                     <li><a href="#">contact</a></li>
+                </ul><!--end ul-->
+        </footer><!--end footer-->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!--jQuery-->
+        <script src="js/script.js" type="text/javascript"></script><!--external javascript-->
+        
+    </body>
+</html>
